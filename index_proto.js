@@ -16,3 +16,7 @@ employees.addEmployees(test1);
 employees.addEmployees(test2);
 const bytes = employees.serializeBinary()
 fs.writeFileSync("employeeBinary",bytes)
+
+/* Deserializing */
+const employeesfromBinary = Schema.Employees.deserializeBinary(bytes);
+console.log(employeesfromBinary.toString());
