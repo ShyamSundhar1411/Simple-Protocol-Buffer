@@ -4,3 +4,6 @@ message Employee{
     string name=2;
     float salary=3;
 }
+message Employees{
+    repeated Employee employees=1;
+}
